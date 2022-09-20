@@ -1,0 +1,119 @@
+.nav {
+  background-color: rgb(83, 24, 186);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.nav__link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+}
+.nav__link:hover {
+  cursor: pointer;
+  background-color: rgb(53, 12, 123);
+  transform: scale(1.1);
+  border-radius: 12px;
+}
+@media (max-width: 725px) {
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.contenedor__caja {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contenedor__caja--1 {
+  animation-name: animacion1;
+  animation-delay: 0.1s;
+}
+@keyframes animacion1 {
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.contenedor__caja--2 {
+  animation-name: animacion2;
+  animation-delay: 0.2s;
+}
+@keyframes animacion2 {
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.contenedor__caja--3 {
+  animation-name: animacion3;
+  animation-delay: 0.3s;
+}
+@keyframes animacion3 {
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.contenedor__caja--4 {
+  animation-name: animacion4;
+  animation-delay: 0.4s;
+}
+@keyframes animacion4 {
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.contenedor__caja--5 {
+  animation-name: animacion5;
+  animation-delay: 0.5s;
+}
+@keyframes animacion5 {
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+h1 {
+  color: rgb(61, 203, 250);
+}
+
+.contenedor {
+  background-color: rgb(121, 127, 130);
+  display: flex;
+  padding: 30px;
+}
+.contenedor__caja {
+  padding: 50px;
+  border-radius: 50%;
+  margin: 0 15px;
+  background-color: #000;
+}
+.contenedor__caja:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.contenedor__caja--roja {
+  background-color: #f00;
+}
+.contenedor__caja--azul {
+  background-color: #00f;
+}
+.contenedor__caja--rosa {
+  background-color: rgb(252, 49, 222);
+}
+.contenedor__caja--verde {
+  background-color: #0f0;
+}
+.contenedor__caja--prueba {
+  background-color: rgb(0, 203, 244);
+}
+
+/*# sourceMappingURL=styles.css.map */

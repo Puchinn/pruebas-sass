@@ -1,0 +1,16 @@
+$color_menu : rgb(61, 203, 250);
+$fondo-div: rgb(121, 127, 130);
+$fondo-nav : rgb(83, 24, 186);
+$fondo-hover-nav:rgb(53, 12, 123);
+
+@mixin hover {
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform .5s;
+    };
+}
+
+@mixin probando($color: green) {
+    background-color: $color;
+}

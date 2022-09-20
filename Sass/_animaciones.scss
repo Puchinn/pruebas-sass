@@ -1,0 +1,20 @@
+.contenedor{
+    &__caja{
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    };
+};
+
+@for $i from 1 through 5 {
+    .contenedor__caja--#{$i}{
+        animation-name: animacion#{$i};
+        animation-delay: #{$i*0.1}s;
+        @keyframes animacion#{$i}{
+            100%{
+                transform: translateY(-15px);
+            };   
+        };
+    };
+};

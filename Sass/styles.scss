@@ -1,0 +1,34 @@
+@use 'variables';
+@use "nav";
+@use "animaciones";
+h1{
+    color:  variables.$color_menu;
+}
+.contenedor{
+    background-color: variables.$fondo-div;
+    display: flex;
+    padding: 30px;
+    &__caja{
+        padding: 50px;
+        border-radius: 50%;
+        margin: 0 15px;
+        background-color: #000;
+        @include variables.hover();
+        &--roja{
+            background-color: #f00;
+        };
+        &--azul{
+            background-color: #00f;
+        };
+        &--rosa{
+            background-color: rgb(252, 49, 222);
+        };
+        &--verde{
+            background-color: #0f0;
+        };
+        &--prueba{
+            @include variables.probando(rgb(0, 203, 244));
+        };
+    };
+};
+
